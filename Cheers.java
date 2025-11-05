@@ -12,7 +12,8 @@ public class Cheers {
             int num = Integer.parseInt(args[1]);
 	    int length = str.length();
             for (int i = 0; i < length; i++) {
-                if (str.charAt(i) == 'A' || str.charAt(i) == 'E' || str.charAt(i) == 'F' || str.charAt(i) == 'H' ||str.charAt(i) == 'I' || str.charAt(i) == 'L' || str.charAt(i) == 'M' || str.charAt(i) == 'N' ||str.charAt(i) == 'O' || str.charAt(i) == 'R' ||str.charAt(i) == 'S' || str.charAt(i) == 'X') {
+                if (str.charAt(i) == 'A' || str.charAt(i) == 'E' || str.charAt(i) == 'F' || str.charAt(i) == 'H' ||str.charAt(i) == 'I' || str.charAt(i) == 'L' || str.charAt(i) == 'M' 
+                || str.charAt(i) == 'N' ||str.charAt(i) == 'O' || str.charAt(i) == 'R' ||str.charAt(i) == 'S' || str.charAt(i) == 'X') {
                         strAnOrA = "an ";
                 }
                 else {
