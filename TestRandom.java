@@ -4,6 +4,7 @@ public  class  TestRandom {
 		int N = Integer.parseInt(args[0]);
 		int countGreaterThanHalf = 0, countSmallerThanHalf = 0;
 		double random, ratio;
+		//Creating random numbers n times and counting how many times they are greater/equal 0.5 and how many times they are smaller.
 		for (int i = 0; i < N; i++) {
 			random = Math.random();
 			if (random < 0.5)
@@ -13,12 +14,12 @@ public  class  TestRandom {
 		}
 		System.out.println("> 0.5 " + countGreaterThanHalf + " times");
 		System.out.println("<= 0.5 " + countSmallerThanHalf + " times");
+		//Handling division by 0
 		if(Math.min(countGreaterThanHalf, countSmallerThanHalf) == 0)
-			System.out.println("0.0");
+			ratio = 0.0;
 		else {
 			ratio = (double)Math.min(countGreaterThanHalf, countSmallerThanHalf) / (double)Math.max(countGreaterThanHalf, countSmallerThanHalf);
-			System.out.println("Ratio: " + ratio);
-
 		}
+		System.out.println("Ratio: " + ratio);
 	}
 }
