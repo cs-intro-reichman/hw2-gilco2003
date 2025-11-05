@@ -9,6 +9,7 @@ Great work boaz!
 public class Cheers {
         public static void main(String[] args) {
             String str = args[0], strAnOrA, strTemp;
+            str = str.toUpperCase();
             int num = Integer.parseInt(args[1]);
 	    int length = str.length();
             for (int i = 0; i < length; i++) {
@@ -20,10 +21,10 @@ public class Cheers {
                         strAnOrA = "a ";
                 }
                 strTemp= str.charAt(i) + "";
-                System.out.println("Give me " + strAnOrA + strTemp.toUpperCase() +": " +  strTemp.toUpperCase() +"!");
+                System.out.println("Give me " + strAnOrA + strTemp +": " +  strTemp +"!");
             }
           System.out.println("What does that spell?");
             for (int i = 0; i < num; i++)
-          System.out.println(str.toUpperCase() + "!!!");
+          System.out.println(str + "!!!");
         }
 }
